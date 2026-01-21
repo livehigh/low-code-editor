@@ -1,6 +1,6 @@
 {
   "name": "@livehigh/low-code-editor",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "workspaces": [
     "packages/amis-formula",
     "packages/amis-core",

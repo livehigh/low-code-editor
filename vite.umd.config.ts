@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
+import svgr from 'vite-plugin-svgr';
 import { resolve } from 'path'
 
 export default defineConfig({
@@ -10,6 +11,16 @@ export default defineConfig({
         parserOpts: {
           plugins: ['decorators-legacy', 'classProperties']
         }
+      }
+    }),
+    svgr({
+      exportAsDefault: true,
+      svgrOptions: {
+        svgProps: {
+          className: 'icon'
+        },
+        prettier: false,
+        dimensions: false
       }
     }),
     dts({

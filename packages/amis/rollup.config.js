@@ -189,7 +189,6 @@ function getPlugins(format = 'esm') {
       prettier: false,
       dimensions: false
     }),
-    ,
     transpileDynamicImportForCJS(),
     autoExternal(),
     json(),
