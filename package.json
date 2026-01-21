@@ -35,7 +35,7 @@
     "fis3-dev": "fis3 release -cwd ./public",
     "deploy-gh-page": "sh ./deploy-gh-pages.sh",
     "clean": "rimraf dist",
-    "build": "npm i && npm run clean && npm run build-all && npm run build-dist",
+    "build": "npm run clean && npm run build-all && npm run build-dist",
     "build-echo": "npm i && echo 'build'",
     "build-dist": "NODE_OPTIONS=--max-old-space-size=8192 vite build --config vite.umd.config.ts",
     "build-all": "npm run build --workspaces",

@@ -29,14 +29,8 @@ async function buildSchema(
   }> = Array.isArray(origin) ? origin.concat() : [];
 
   // 开发环境直接读取本地 schema.json 文件。
-  if (process.env.NODE_ENV !== 'production') {
-    schemas.some(item => item.uri === schemaUrl) ||
-      schemas.push({
-        uri: schemaUrl,
-        // @ts-ignore
-        schema: await import('amis/schema.json').then(item => item.default)
-      });
-  }
+  // 说明：该仓库在打包为单一大包时可能不存在 amis/schema.json 资源文件。
+  // 为避免构建期因为缺失该文件而失败，这里不再主动注入该 schema。
 
   if (internalSchema.test(definition)) {
     const rawName = RegExp.$1;

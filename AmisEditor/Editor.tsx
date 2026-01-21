@@ -1,10 +1,6 @@
 /* eslint-disable */
 import * as React from 'react'
-import {
-  Editor,
-  ShortcutKey,
-  // setThemeConfig,
-} from 'amis-editor'
+import { Editor } from 'amis-editor'
 import { Select, uuid, Button } from 'amis'
 import { currentLocale } from 'i18n-runtime'
 import { Portal } from 'react-overlays'
@@ -27,23 +23,8 @@ import '../packages/amis/lib/helper.css'
 import './css/iconfont.css'
 import '../packages/amis-editor-core/lib/style.css'
 import '../packages/amis-editor-core/scss/editor.scss'
-// import '../examples/doc.css'
 import './_corpus-i18n.scss'
 import './style.scss'
-// 测试组织属性配置面板的国际化，可以放开如下注释
-// import './renderer/InputTextI18n';
-// import './renderer/TextareaI18n';
-// import './utils/overwriteSchemaTpl';
-// const i18nEnabled = true;
-
-// import {cxdData} from 'amis-theme-editor-helper';
-// setThemeConfig(cxdData);
-
-// import {setDefaultTheme} from 'amis';
-// import {setThemeConfig} from 'amis-editor-core';
-// import { cxdData } from 'amis-theme-editor-helper';
-// setDefaultTheme('cxd');
-// setThemeConfig(cxdData);
 
 const i18nEnabled = false
 const defaultSchema: DefaultSchema = {
