@@ -43,7 +43,7 @@
     "codemirror": "^5.63.0",
     "downshift": "6.1.12",
     "echarts": "5.5.1",
-    "froala-editor": "3.1.1",
+    "froala-editor": "4.3.1",
     "hoist-non-react-statics": "^3.3.2",
     "jsbarcode": "^3.11.5",
     "keycode": "^2.2.1",
@@ -71,7 +71,7 @@
     "react-transition-group": "4.4.2",
     "react-visibility-sensor": "5.1.1",
     "sortablejs": "1.15.0",
-    "tinymce": "^6.1.2",
+    "tinymce": "^8.3.2",
     "tslib": "^2.3.1",
     "uncontrollable": "7.2.1",
     "video-react": "0.15.0"
