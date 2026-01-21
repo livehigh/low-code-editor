@@ -820,10 +820,10 @@ registerRenderer({
   getComponent: () => import('./renderers/MultilineText')
 });
 // import './renderers/OfficeViewer';
-registerRenderer({
-  type: 'office-viewer',
-  getComponent: () => import('./renderers/OfficeViewer')
-});
+// registerRenderer({
+//   type: 'office-viewer',
+//   getComponent: () => import('./renderers/OfficeViewer')
+// });
 // import './renderers/PdfViewer';
 registerRenderer({
   type: 'pdf-viewer',
